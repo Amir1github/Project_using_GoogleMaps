@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web site</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<div style="position: relative;width:auto; height:100%; ">
+    <div class="info_window">
+        <button id="info_exit" class="info_exit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 20.168l-8.185-8.187 8.185-8.174-2.832-2.807-8.182 8.179-8.176-8.179-2.81 2.81 8.186 8.196-8.186 8.184 2.81 2.81 8.203-8.192 8.18 8.192z"/></svg></button>
+        <h1 class="info_title" id="info_title">Title</h1>
+        <button id="route-btn">Маршрут</button>
+        <p class="info"></p>
+        
+    </div>
+    <div id="map">
+    
+    </div>
+    
+</div>
+
+<script src="script.js"></script>
+
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGRnDhzIz-pTnEBockMqN55NBTcRszrpA&callback=initMap"
+    defer
+></script>
+
+
+</body>
+</html>

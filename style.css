@@ -1,0 +1,63 @@
+#map {
+  height: calc(100% - 0px); /* Эта строка обновится динамически через JavaScript */
+  transition: height 0.3s ease; /* Плавный переход высоты */
+}
+  /* Optional: Makes the sample page fill the window. */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .custom-map-control-button {
+    display: flex;
+    width:auto;
+    color:white;
+    background-color: #0fa19a;
+    border: 0;
+    border-radius: 13px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 0 0.5em;
+
+    overflow: hidden;
+    height: 40px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+  .locationButton_text{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Rubik", serif;
+    color:rgb(255, 255, 255);
+  }
+  .custom-map-control-button:hover {
+  
+    background: rgb(28, 139, 143);
+    box-shadow: 1px 1px 6px rgb(100, 102, 100);
+    transition: box-shadow 0.5s ease;
+  }
+  .info_window{
+    
+    position: absolute;
+    display:none;
+    width:100%;
+    bottom: 0%;
+    z-index: 100;
+    
+    background-color: rgb(255, 255, 255);
+    transition: height 0.6s ease;
+    transition: display 0.6s ease;
+  }
+.info_exit{
+  background:none;
+  border:none;
+}
+.info_title{
+  font-weight: 100;
+}
+.info_message{
+  margin-bottom:100px;
+}
